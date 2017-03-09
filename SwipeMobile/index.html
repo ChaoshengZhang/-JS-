@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="jquery.easing.min.js"></script>
+	<script src="jquery.swipe.1.0.3.js"></script>
+	
+	<title>无标题文档</title>
+	<style>
+		*{ margin:0; padding:0; box-sizing: content-box; border: 0;}
+		#swipe{ width:100%; overflow:hidden; position: relative;}
+		#swipe ul{
+			
+		}
+		#swipe ul li{ float:left; list-style:none;}
+		#swipe ul li img{ width: 100%; height: auto;}
+		.swipeBtn{
+			position: absolute;
+			width: 60px;
+			height: 120px;
+			line-height: 120px;
+			text-align: center;
+			color: #fff;
+			background-color: rgba(0,0,0,0.6);
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			z-index: 999;
+			font-size: 50px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+			-webkit-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+		.swipePrev{
+			left: 0
+		}
+		.swipeNext{
+			right: 0
+		}
+		.bottomCircleNav a.active{
+			background: red !important;
+		}
+	</style>
+	
+	</head>
+<body>
+<div id="swipe">
+	<ul>
+    	<li><img src="../static/images/1.jpg"></li>
+        <li><img src="../static/images/2.jpg"></li>
+        <li><img src="../static/images/3.jpg"></li>
+        <li><img src="../static/images/4.jpg"></li>
+        <li><img src="../static/images/5.jpg"></li>
+    </ul>
+</div>
+	<script>
+		$(function(){
+			
+			$("#swipe").mobileSwipe({
+				animateTime:300, //easeOutExpo
+				animationWay:"linear",
+				loop:true
+			})
+
+		})
+	</script>
+</body>
+</html>

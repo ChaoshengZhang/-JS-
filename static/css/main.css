@@ -1,0 +1,97 @@
+body{
+	background-color: #fff; 
+	font-family: 'Microsoft yahei'; 
+	font-size:14px; 
+	color:#333;
+}
+legend{
+	padding: 1em 0 0.3em;
+}
+#header{
+	text-align: center;
+}
+#header img{
+	width: 80px;
+}
+.logoText{
+	font-size: 16px;
+	color: #000;
+}
+#content{
+	padding-bottom: 1em;
+}
+#content .list li{
+	padding: 0.4em 15px 0.4em 15px;
+	line-height: 20px;
+	position: relative;
+}
+#content .list li a:active{
+	color: blue;
+}
+#footer{
+	border-top: 1px solid #ccc;
+	padding: 1em 0;
+}
+
+.squeezebox .title{
+	font-size: 16px;
+	color: #000;
+	position: relative;
+	padding: 0 15px;
+}
+.squeezebox .title:after{
+	position: absolute;
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-radius: 10px;
+	left: 0px;
+	top: calc(50% - 3px);
+	background-color: #666
+}
+.squeezebox .text{
+	padding: 1em 1em 1.5em;
+}
+.squeezebox .code{
+	
+}
+.squeezebox .wayList>dd{
+	padding-bottom: 1em;
+}
+.otherText{
+	font-weight: normal;
+	line-height: 24px;
+	padding-left: 12px;
+}
+.otherText dt{
+	font-weight: normal;
+	padding: 0.3em 8px 0.3em;
+	margin: 0.1em 0;
+	background-color: rgba(0,0,0,0.05)
+}
+.otherText dd{
+	padding: 0 10px;
+}
+.wayList dd .code{
+	padding: 0.4em 0;
+}
+.wayTitle{
+	color: #000;
+}
+.articleFrom{
+	display: inline-block;
+	padding: 0 3px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #ccc;
+	color: #fff;
+	border-radius: 3px;
+	margin-left: 4px;
+}
+.ewmCon{
+	position: absolute;
+	-webkit-box-shadow: 0 2px 5px #ccc;
+	box-shadow: 0 2px 5px #ccc;
+}

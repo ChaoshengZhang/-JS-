@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Keywords" content=""/>
+		<meta http-equiv="Pragma" content="no-cache" />
+		<link rel="stylesheet" href="animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="demo.css"/>
+  		<link rel="stylesheet" type="text/css" href="loaders.css"/>
+		<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="jquery.easing.min.js"></script>
+		<script src="mobile.fullpage.1.0.1.js"></script>
+		<title>邀请函</title>
+		<style>
+			*{ margin:0; padding:0; box-sizing: content-box; border: 0; font-family: "微软雅黑"}
+			html,body{ height: 100%; overflow: hidden; }
+			@media screen and (orientation:portrait) {
+				/*css[竖向定义样式]*/
+				#swipe ul li:nth-child(1){
+					background-image: url(../static/images/11.jpg);
+				}
+				#swipe ul li:nth-child(2){
+					background-image: url(../static/images/22.jpg);
+				}
+				#swipe ul li:nth-child(3){
+					background-image: url(../static/images/33.jpg);
+				}
+				#swipe ul li:nth-child(4){
+					background-image: url(../static/images/44.jpg);
+				}
+				#swipe ul li:nth-child(5){
+					background-image: url(../static/images/55.jpg);
+				}
+			}
+			@media screen and (orientation:landscape) {
+				/*css[横向定义样式]*/
+				#swipe ul li:nth-child(1){
+					background-image: url(../static/images/1.jpg);
+				}
+				#swipe ul li:nth-child(2){
+					background-image: url(../static/images/2.jpg);
+				}
+				#swipe ul li:nth-child(3){
+					background-image: url(../static/images/3.jpg);
+				}
+				#swipe ul li:nth-child(4){
+					background-image: url(../static/images/4.jpg);
+				}
+				#swipe ul li:nth-child(5){
+					background-image: url(../static/images/5.jpg);
+				}
+			}
+			#loading{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				background: #000;
+				z-index: 222;
+			}
+			#swipe{ height: 100%; width: 100%; position: relative;}
+			#swipe ul{}
+			#swipe li{
+				background-size: cover;
+				overflow: hidden;
+				position: relative;
+			}
+			#swipe .btnShow{
+				position: absolute;
+				background-image: url(img/ico.png);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 80%;
+				background-color: rgba(0,0,0,0.4);
+				height: 40px;
+				z-index: 100;
+				width: 40px;
+				left: 50%;
+				margin-left: -20px;
+				bottom: 10px;
+				-webkit-border-radius: 40px;
+				-moz-border-radius: 40px;
+				border-radius: 40px;
+			}
+			.people{
+				background: rgba(0,0,0,0.6);
+				position: absolute;
+				left: 2rem;
+				right: 2rem;
+				top: 20%;
+				padding: 0.8rem;
+				color: #fff;
+			}
+			.people dt{
+				font-weight: bold;
+				font-size: 18px;
+			}
+			.people dd:nth-of-type(1){
+				padding: 0.3rem 0;
+			}
+			.people .text{
+				font-size: 14px;
+				line-height: 22px;
+			}
+			.people textarea{
+				width: 100%;
+				height: 3rem;
+				padding: 0.2rem;
+			}
+			.people .submit{
+				padding: 0.2rem 0.4rem;
+				background: #ccc;
+				color: #000;
+			}
+			.pacman{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%,-50%);
+				-moz-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+				-o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+			}
+		</style>
+	</head>
+<body>
+<div id="loading">
+	<div class="loader-inner pacman">
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+    </div>
+</div>
+<div id="swipe">
+	<ul>
+    	<li>
+    		<div class="wangchaoyu people animated">
+    			<dl>
+    				<dt>王朝煜</dt>
+    				<dd>技术部总监</dd>
+    				<dd>
+    					<div class="text">
+    						处女座，职业生涯以来遇到最好的领导，有责任心，有智慧，幽默，污【PS：造就了这个超污】.
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    	</li>
+        <li>
+        	<div class="douxiangpo people animated">
+    			<dl>
+    				<dt>豆香波</dt>
+    				<dd>程序杠把子</dd>
+    				<dd>
+    					<div class="text">
+    						你是我遇到过最没脾气的程序员了,技术控,什么都知道,在你面前我感觉自己是"辣鸡".o(╯□╰)o
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+        </li>
+        <li>
+        	<div class="wangtian people animated">
+    			<dl>
+    				<dt>王添</dt>
+    				<dd>最美设计师</dd>
+    				<dd>
+    					<div class="text">
+    						你是我们的宝贝，天真美丽，好想继续呵护你哦~~上班不要在打牌了,不是要做糕点师么~^_^
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+        </li>
+        <li>
+        	<div class="mashengqun people animated">
+    			<dl>
+    				<dt>马圣群</dt>
+    				<dd>别人心中程序员的写照</dd>
+    				<dd>
+    					<div class="text">
+    						整天头发油油的,看上去无精打采,不知道的以为他晚上撸代码到几点,其实不知道在撸什么~哈啊哈~
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+        </li>
+        <li>
+        	<div class="zhangchaosheng people animated">
+    			<dl>
+    				<dt>章超胜</dt>
+    				<dd>前端小牛</dd>
+    				<dd>
+    					<div class="text">
+    						很开心认识你们~成就了我的超污,谢谢你们~
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+        </li>
+        <li>
+        	<div class="zhangchaosheng people animated">
+    			<dl>
+    				<dt>离职请吃饭了哦</dt>
+    				<dd>时间:2016.6.18 12:00 am</dd>
+    				<dd>
+    					<div class="text">
+    						吃什么呢~
+    						<div>
+    							<textarea name="" rows="" placeholder="快快写下你的建议吧~" cols=""></textarea>
+    							<p><input type="button" class="submit" value="提交" /></p>
+    						</div>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+        </li>
+    </ul>
+    <span class="btnShow"></span>
+</div>
+	<script>
+		window.onload = function(){
+			var system ={};  
+		    var p = navigator.platform;       
+		    system.win = p.indexOf("Win") == 0;  
+		    system.mac = p.indexOf("Mac") == 0;  
+		    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+		    if(system.win||system.mac||system.xll){//如果是电脑跳转到百度  
+		        alert("用手机打开额~") ;
+		        window.location.href="http://www.baidu.com/"; 
+		        //$("#loading").hide(); 
+		    }else{  //如果是手机,跳转到谷歌
+		       $("#loading").hide(); 
+		    }
+			$("#swipe").mobileFullpage()
+			$(".submit").bind("touchend",function(){
+				alert("天真~")
+			})
+		}
+	</script>
+</body>
+</html>
